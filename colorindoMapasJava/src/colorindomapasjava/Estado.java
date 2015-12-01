@@ -48,4 +48,36 @@ public class Estado {
     public void setColor(Color color) {
         this.color = color;
     }
+   
+    public String colorToString(){
+        if (this.color == Color.BLACK){
+            return "black";
+        }
+        if (this.color == Color.BLUE){
+            return "blue";
+        }
+        if (this.color == Color.GREEN){
+            return "green";
+        }
+        if (this.color == Color.PINK){
+            return "pink";
+        }
+        if (this.color == Color.RED){
+            return "red";
+        }
+        if (this.color == Color.WHITE){
+            return "white";
+        }
+        if (this.color == Color.YELLOW){
+            return "yellow";
+        }
+        if (this.color == Color.GRAY){
+            return "gray";
+        }
+        if (this.color == Color.MAGENTA){
+            return "magenta";
+        }
+        return "Invalid Color. Please select a new color for "+ this.color;
+        
+    }
 }

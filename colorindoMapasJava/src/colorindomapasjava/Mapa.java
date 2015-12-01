@@ -64,7 +64,6 @@ public class Mapa {
         
     } 
     
-    
      Comparator<ArrayList> ORDENAR_MAPA_CRESCENTE = 
                                         new Comparator<ArrayList>() {
         @Override
@@ -84,8 +83,6 @@ public class Mapa {
      */ 
     boolean colorir (ArrayList<Estado> es, Color c){
         
-        
-        
         for (int i =1; i < es.size(); i++){//percorre os vizinhos de um dado estado
             Estado estado = es.get(i);
             for (int j = 0; j < mapa.size(); j++) {//percorre os vertices do mapa
@@ -104,10 +101,6 @@ public class Mapa {
         
     }
         
-        
-        
-    
-    
     void colorirMapaBrasil(Color c1, Color c2, Color c3, Color c4){
         Collections.sort(mapa, ORDENAR_MAPA_CRESCENTE);
 //        System.out.println(((Estado) (mapa.get(0).get(0))).getSigla());
@@ -128,12 +121,7 @@ public class Mapa {
                         break;
                     i++;
                }
-            
-        }
-        
-        
-        
-        
+        }    
     }
     
     ArrayList<Estado> getMapaColorido(){

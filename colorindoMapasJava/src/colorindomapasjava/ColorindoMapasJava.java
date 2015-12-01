@@ -19,14 +19,10 @@ public class ColorindoMapasJava {
         mapa.criarMapaBrazil();
         mapa.colorirMapaBrasil(Color.blue, Color.red, Color.yellow, Color.green);
         ArrayList<Estado> estados= mapa.getMapaColorido();
-        
-       
-        
-        
-        
+
         for (int i=0; i < estados.size(); i++){
             String sigla = estados.get(i).getSigla();
-            Color c = estados.get(i).getColor();
+            String c = estados.get(i).colorToString();
             System.out.println (sigla +" -> " + c);   
         }
     }
